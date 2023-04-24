@@ -1,0 +1,163 @@
+.carrosel-titulo{
+	color: #0B1A50;
+	background-color: white;
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 22px;
+	padding: 1.5em 1em 1em 0;
+	margin-left: 1em;
+}
+
+
+/*A ordem do padding é cima direita baixo esquerda (sentido horario)*/
+
+
+
+.swiper-slide {
+	max-width: 280px;
+	width: 100%;
+	height:800px;
+	padding: 2em;
+}
+
+
+.swiper-button-prev, .swiper-button-next{
+	display: none;
+}
+
+.swiper-pagination{
+	position: initial;
+	margin: 0.5em 0;
+}
+
+.slick-dots button {
+	font-size: 0;
+}
+
+.slick-dots .slick-active {
+	color: #091DD2;
+}
+
+.carousel-wrapper {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.carousel-container{
+	width: 300px;
+	height: 100%;
+	background-color: white;
+	z-index: 5;
+	text-align: center;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.img-hoteis{
+	margin: 1em;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+
+/*descrição dos hotéis*/
+.nome-hotel{
+	font-weight: 600;
+	font-size: 27px;
+	text-align: left;
+	color: #091DD2;
+	margin-left: 1em;
+}
+
+.nome-hotel:hover{
+	font-weight: 600;
+	font-size: 27px;
+	text-align: left;
+	color: #091DD2;
+	margin-left: 1em;
+	text-decoration: underline;
+}
+
+.avaliacao{
+	display: flex;
+	text-align: left;
+	width: 20px;
+	height: 20px;
+	margin: 1.5em 1em;
+
+
+}
+
+.nota{
+	padding: 0.1em 1em;
+	font-size: 20px;
+}
+
+
+.valores{
+	display: flex;
+	margin: 4em 1.5em;
+	flex-direction: column;
+}
+
+.diaria{
+	/* padding: 0 5em 0 0.3em; */
+	font-size: 30px;
+}
+
+.button-veroferta{
+	text-decoration: none;
+	color: #091DD2;
+	padding: 1em 0;
+	font-weight: bold;
+}
+
+.button-veroferta:hover{
+	text-decoration: none;
+	color: skyblue;
+	padding: 1em 0;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+	.swiper-slide-container {
+		max-width: 312px;
+		width: 100%;
+	}
+	
+	.img-hoteis{
+		width: 100%;
+		max-width: 250px;
+	}
+
+	.valores {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 1em 1.5em;
+	}
+
+	.diaria {
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 390px) {
+	.carrosel-titulo {
+		margin: 0;
+		text-align: center;
+	}
+
+	.carousel-container {
+		max-width: 245px;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 330px) {
+	.carousel-container {
+		margin-left: 38px;
+	}
+}
